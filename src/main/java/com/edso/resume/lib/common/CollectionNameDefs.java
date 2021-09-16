@@ -15,5 +15,8 @@ public class CollectionNameDefs {
     public static final String COLL_API_ROLE_GROUP_USER = "coll_api_role_group_user";
 
     public static final String COLL_JOB = "coll_job";
-    public static final String COLL_LEVEL = "coll_level";
+    public static final String COLL_JOB_LEVEL = "coll_job_level";
+    public static final String COLL_DEPARTMENT = "coll_department";
+    public static final String COLL_SCHOOL = "coll_school";
+    public static final String COLL_SOURCE_CV = "coll_source_cv";
 }
