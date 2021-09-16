@@ -13,4 +13,7 @@ public class CollectionNameDefs {
     public static final String COLL_API_ROLE_GROUP = "coll_api_role_group";
     public static final String COLL_API_ROLE_GROUP_ITEMS = "coll_api_role_group_items";
     public static final String COLL_API_ROLE_GROUP_USER = "coll_api_role_group_user";
+
+    public static final String COLL_JOB = "coll_job";
+    public static final String COLL_LEVEL = "coll_level";
 }
