@@ -25,4 +25,6 @@ public class CollectionNameDefs {
     public static final String COLL_PROVINCE = "coll_province";
     public static final String COLL_STATUS_CV = "coll_status_cv";
     public static final String COLL_PROFILE = "coll_profile";
+    public static final String COLL_HISTORY_PROFILE = "coll_history_profile";
+    public static final String COLL_NOTE_PROFILE = "coll_note_profile";
 }
