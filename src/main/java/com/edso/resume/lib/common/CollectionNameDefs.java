@@ -27,4 +27,5 @@ public class CollectionNameDefs {
     public static final String COLL_PROFILE = "coll_profile";
     public static final String COLL_HISTORY_PROFILE = "coll_history_profile";
     public static final String COLL_NOTE_PROFILE = "coll_note_profile";
+    public static final String COLL_CALENDAR_PROFILE = "coll_calendar_profile";
 }
