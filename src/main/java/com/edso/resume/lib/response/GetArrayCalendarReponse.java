@@ -17,7 +17,7 @@ public class GetArrayCalendarReponse<T> extends BaseResponse{
     }
 
     public String info() {
-        return "rc = " + code + ", rd = " + message + ", calendars = " + (calendars != null ? calendars.size() : 0) + "";
+        return "rc = " + code + ", rd = " + message + ", calendars = " + (calendars != null ? calendars.size() : 0);
     }
 
     public void setSuccess(List<T> calendars) {
