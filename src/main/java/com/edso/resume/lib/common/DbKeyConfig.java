@@ -56,6 +56,9 @@ public class DbKeyConfig {
     public static final String TYPE = "type";
     public static final String DEPARTMENT_ID = "department_id";
     public static final String DEPARTMENT_NAME = "department_name";
+    public static final String SCHOOL_LEVEL = "school_level";
+    public static final String MAJOR = "major";
+    public static final String RECENT_WORK_PLACE = "recent_work_place";
 
 
 }
