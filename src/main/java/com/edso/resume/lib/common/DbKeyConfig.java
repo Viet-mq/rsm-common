@@ -58,8 +58,11 @@ public class DbKeyConfig {
     public static final String DEPARTMENT_NAME = "department_name";
     public static final String SCHOOL_LEVEL = "school_level";
     public static final String MAJOR = "major";
+    public static final String COMMENT = "comment";
     public static final String RECENT_WORK_PLACE = "recent_work_place";
     public static final String URL_CV = "url_cv";
+    public static final String URL = "url";
+    public static final String PATH = "path";
 
 
 }

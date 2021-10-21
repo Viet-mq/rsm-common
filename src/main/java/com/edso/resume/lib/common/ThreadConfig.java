@@ -9,4 +9,6 @@ public class ThreadConfig {
     public static final String STATUS_CV = "statusCV";
     public static final String DEPARTMENT = "department";
     public static final String CALENDAR = "calendar";
+    public static final String USER = "user";
+    public static final String NOTE = "note";
 }
