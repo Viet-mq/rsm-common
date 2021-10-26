@@ -11,4 +11,6 @@ public class ThreadConfig {
     public static final String CALENDAR = "calendar";
     public static final String USER = "user";
     public static final String NOTE = "note";
+    public static final String BLACKLIST_EMAIL = "blacklistEmail";
+    public static final String BLACKLIST_PHONE_NUMBER = "blacklistPhoneNumber";
 }

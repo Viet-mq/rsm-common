@@ -61,8 +61,10 @@ public class DbKeyConfig {
     public static final String COMMENT = "comment";
     public static final String RECENT_WORK_PLACE = "recent_work_place";
     public static final String URL_CV = "url_cv";
-    public static final String URL = "url";
-    public static final String PATH = "path";
+    public static final String PATH_SERVER = "path_server";
+    public static final String PATH_FILE = "path_file";
+    public static final String FILE_NAME = "file_name";
+    public static final String ID_CALENDAR = "id_calendar";
 
 
 }
