@@ -8,10 +8,10 @@ import java.util.List;
 
 @Getter
 @Setter
-public class GetArrayCalendarReponse<T> extends BaseResponse{
+public class GetArrayCalendarResponse<T> extends BaseResponse{
     private List<T> calendars;
 
-    public GetArrayCalendarReponse() {
+    public GetArrayCalendarResponse() {
         super();
         this.calendars = new ArrayList<>();
     }

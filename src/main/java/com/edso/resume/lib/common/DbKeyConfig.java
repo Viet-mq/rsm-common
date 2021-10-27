@@ -65,6 +65,25 @@ public class DbKeyConfig {
     public static final String PATH_FILE = "path_file";
     public static final String FILE_NAME = "file_name";
     public static final String ID_CALENDAR = "id_calendar";
+    public static final String ID_COMPANY = "id_company";
+    public static final String ID_PARENT = "id_parent";
+    public static final String URL_IMAGE = "url_image";
+    public static final String PATH_IMAGE = "path_image";
+    public static final String TALENT_POOL_ID = "talent_pool_id";
+    public static final String TALENT_POOL_NAME = "talent_pool_name";
+
+    public static final String COMPANY_NAME = "company_name";
+    public static final String COMPANY_WEBSITE_URL = "company_website_url";
+    public static final String COMPANY_CONTACT_NUMBER = "company_contact_number";
+    public static final String COMPANY_ADDRESS = "company_address";
+    public static final String COMPANY_SUB_ADDRESS = "company_sub_address";
+    public static final String WEBSITE_TITLE = "website_title";
+    public static final String WEBSITE_LINK = "website_link";
+    public static final String KEYWORDS = "keywords";
+    public static final String FAV_ICON_URL = "fav_icon_url";
+    public static final String FAV_ICON_PATH = "fav_icon_path";
+    public static final String COMPANY_LOGO_URL = "company_logo_url";
+    public static final String COMPANY_LOGO_PATH = "company_logo_path";
 
 
 }

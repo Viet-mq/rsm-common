@@ -17,6 +17,7 @@ public class CollectionNameDefs {
     public static final String COLL_JOB = "coll_job";
     public static final String COLL_JOB_LEVEL = "coll_job_level";
     public static final String COLL_DEPARTMENT = "coll_department";
+    public static final String COLL_DEPARTMENT_COMPANY = "coll_department_company";
     public static final String COLL_SCHOOL = "coll_school";
     public static final String COLL_SOURCE_CV = "coll_source_cv";
     public static final String COLL_VILLAGE = "coll_village";
@@ -31,4 +32,5 @@ public class CollectionNameDefs {
     public static final String COLL_BLACKLIST = "coll_blacklist";
     public static final String COLL_TALENT_POOL = "coll_talent_pool";
     public static final String COLL_EMAIL_TEMPLATE = "coll_email_template";
+    public static final String COLL_COMPANY = "coll_company";
 }

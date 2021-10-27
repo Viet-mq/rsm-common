@@ -5,10 +5,10 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class GetReponse<T> extends BaseResponse {
+public class GetResponse<T> extends BaseResponse {
     private T profile;
 
-    public GetReponse() {
+    public GetResponse() {
         super();
     }
 
