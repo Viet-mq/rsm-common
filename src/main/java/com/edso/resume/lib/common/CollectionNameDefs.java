@@ -31,4 +31,5 @@ public class CollectionNameDefs {
     public static final String COLL_BLACKLIST = "coll_blacklist";
     public static final String COLL_TALENT_POOL = "coll_talent_pool";
     public static final String COLL_EMAIL_TEMPLATE = "coll_email_template";
+    public static final String COLL_KEY_POINT = "coll_key_point";
 }
