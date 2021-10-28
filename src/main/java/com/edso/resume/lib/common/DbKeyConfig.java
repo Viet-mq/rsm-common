@@ -65,8 +65,9 @@ public class DbKeyConfig {
     public static final String PATH_FILE = "path_file";
     public static final String FILE_NAME = "file_name";
     public static final String ID_CALENDAR = "id_calendar";
-    public static final String ID_COMPANY = "id_company";
-    public static final String ID_PARENT = "id_parent";
+    public static final String COMPANY_ID = "company_id";
+    public static final String PARENT_ID = "parent_id";
+    public static final String PARENT_NAME = "parent_name";
     public static final String URL_IMAGE = "url_image";
     public static final String PATH_IMAGE = "path_image";
     public static final String TALENT_POOL_ID = "talent_pool_id";
