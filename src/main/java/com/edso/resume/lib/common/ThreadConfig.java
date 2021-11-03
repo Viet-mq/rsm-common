@@ -14,4 +14,6 @@ public class ThreadConfig {
     public static final String BLACKLIST_EMAIL = "blacklistEmail";
     public static final String BLACKLIST_PHONE_NUMBER = "blacklistPhoneNumber";
     public static final String TALENT_POOL = "talentPool";
+    public static final String PROFILE_PHONE_NUMBER = "profilePhoneNumber";
+    public static final String PROFILE_EMAIL = "profileEmail";
 }

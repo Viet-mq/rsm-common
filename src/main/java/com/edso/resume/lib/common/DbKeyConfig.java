@@ -56,7 +56,7 @@ public class DbKeyConfig {
     public static final String TYPE = "type";
     public static final String DEPARTMENT_ID = "department_id";
     public static final String DEPARTMENT_NAME = "department_name";
-    public static final String SCHOOL_LEVEL = "school_level";
+    public static final String LEVEL_SCHOOL = "level_school";
     public static final String MAJOR = "major";
     public static final String COMMENT = "comment";
     public static final String RECENT_WORK_PLACE = "recent_work_place";
@@ -72,7 +72,6 @@ public class DbKeyConfig {
     public static final String PATH_IMAGE = "path_image";
     public static final String TALENT_POOL_ID = "talent_pool_id";
     public static final String TALENT_POOL_NAME = "talent_pool_name";
-
     public static final String COMPANY_NAME = "company_name";
     public static final String COMPANY_WEBSITE_URL = "company_website_url";
     public static final String COMPANY_CONTACT_NUMBER = "company_contact_number";
@@ -85,6 +84,8 @@ public class DbKeyConfig {
     public static final String FAV_ICON_PATH = "fav_icon_path";
     public static final String COMPANY_LOGO_URL = "company_logo_url";
     public static final String COMPANY_LOGO_PATH = "company_logo_path";
+    public static final String URL = "url";
+    public static final String CHILDREN = "children";
 
 
 }
