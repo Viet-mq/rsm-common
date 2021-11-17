@@ -16,4 +16,7 @@ public class ThreadConfig {
     public static final String TALENT_POOL = "talentPool";
     public static final String PROFILE_PHONE_NUMBER = "profilePhoneNumber";
     public static final String PROFILE_EMAIL = "profileEmail";
+    public static final String RECRUITMENT = "recruitment";
+    public static final String LIST_USER = "listUser";
+    public static final String LIST_SKILL = "listSkill";
 }

@@ -34,4 +34,7 @@ public class CollectionNameDefs {
     public static final String COLL_EMAIL_TEMPLATE = "coll_email_template";
     public static final String COLL_KEY_POINT = "coll_key_point";
     public static final String COLL_COMPANY = "coll_company";
+    public static final String COLL_RECRUITMENT = "coll_recruitment";
+    public static final String COLL_SKILL = "coll_skill";
+    public static final String COLL_REASON_REJECT = "coll_reason_reject";
 }

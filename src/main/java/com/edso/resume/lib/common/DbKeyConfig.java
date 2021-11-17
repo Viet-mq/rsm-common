@@ -11,6 +11,7 @@ public class DbKeyConfig {
     public static final String SCHOOL_NAME = "school_name";
     public static final String JOB_ID = "job_id";
     public static final String JOB_NAME = "job_name";
+    public static final String JOBS = "jobs";
     public static final String LEVEL_JOB_ID = "level_job_id";
     public static final String LEVEL_JOB_NAME = "level_job_name";
     public static final String CV = "cv";
@@ -21,6 +22,7 @@ public class DbKeyConfig {
     public static final String CV_TYPE = "cv_type";
     public static final String STATUS_CV_ID = "status_cv_id";
     public static final String STATUS_CV_NAME = "status_cv_name";
+    public static final String STATUS = "status";
     public static final String NAME_SEARCH = "name_search";
     public static final String CREATE_AT = "create_at";
     public static final String UPDATE_AT = "update_at";
@@ -86,6 +88,21 @@ public class DbKeyConfig {
     public static final String COMPANY_LOGO_PATH = "company_logo_path";
     public static final String URL = "url";
     public static final String CHILDREN = "children";
+    public static final String TITLE = "title";
+    public static final String TYPE_OF_JOB = "type_of_job";
+    public static final String QUANTITY = "quantity";
+    public static final String DETAIL_OF_SALARY = "detail_of_salary";
+    public static final String JOB_DESCRIPTION = "job_description";
+    public static final String REQUIREMENT_OF_JOB = "requirement_of_job";
+    public static final String DEAD_LINE = "dead_line";
+    public static final String RECRUITMENT_ID = "recruitment_id";
+    public static final String RECRUITMENT_NAME = "recruitment_name";
+    public static final String RECRUITMENT_TIME = "recruitment_time";
+    public static final String SKILL = "skill";
+    public static final String MAIL_REF = "mail_ref";
+    public static final String SKILL_ID = "skill.id";
+    public static final String SKILL_NAME = "skill.$.name";
+    public static final String DESCRIPTION = "description";
 
 
 }
