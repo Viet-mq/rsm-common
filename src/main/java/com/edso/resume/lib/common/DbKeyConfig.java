@@ -42,9 +42,12 @@ public class DbKeyConfig {
     public static final String UPDATE_BLACKLIST_BY = "update_blacklist_by";
     public static final String ID_PROFILE = "id_profile";
     public static final String TIME = "time";
+    public static final String INTERVIEW_TIME = "interview_time";
     public static final String ADDRESS = "address";
+    public static final String INTERVIEW_ADDRESS = "interview_address";
     public static final String FORM = "form";
     public static final String INTERVIEWER = "interviewer";
+    public static final String INTERVIEWERS = "interviewers";
     public static final String INTERVIEWEE = "interviewee";
     public static final String CONTENT = "content";
     public static final String QUESTION = "question";
@@ -103,6 +106,12 @@ public class DbKeyConfig {
     public static final String SKILL_ID = "skill.id";
     public static final String SKILL_NAME = "skill.$.name";
     public static final String DESCRIPTION = "description";
+    public static final String DATE = "date";
+    public static final String FLOOR = "floor";
+    public static final String SEND_EMAIL_TO_INTERVIEWEE = "send_email_to_interviewee";
+    public static final String SEND_EMAIL_TO_INTERVIEWER = "send_email_to_interviewer";
+    public static final String AVATAR_COLOR = "avatar_color";
+    public static final String IS_NEW = "is_new";
 
 
 }

@@ -63,6 +63,12 @@ public class ErrorCodeDefs {
     public static final int LAST_APPLY = 248;
     public static final int RECRUITMENT = 249;
     public static final int MAIL_REF = 250;
+    public static final int DATE = 251;
+    public static final int FLOOR = 252;
+    public static final int TYPE = 253;
+    public static final int NOTE = 254;
+    public static final int SEND_EMAIL_TO_INTERVIEWEE = 255;
+    public static final int SEND_EMAIL_TO_INTERVIEWER = 256;
 
 
 }
