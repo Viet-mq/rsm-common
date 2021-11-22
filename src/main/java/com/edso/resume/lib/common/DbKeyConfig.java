@@ -44,7 +44,10 @@ public class DbKeyConfig {
     public static final String TIME = "time";
     public static final String INTERVIEW_TIME = "interview_time";
     public static final String ADDRESS = "address";
-    public static final String INTERVIEW_ADDRESS = "interview_address";
+    public static final String ADDRESS_ID = "address_id";
+    public static final String ADDRESS_NAME = "address_name";
+    public static final String INTERVIEW_ADDRESS_ID = "interview_address_id";
+    public static final String INTERVIEW_ADDRESS_NAME = "interview_address_name";
     public static final String FORM = "form";
     public static final String INTERVIEWER = "interviewer";
     public static final String INTERVIEWERS = "interviewers";
@@ -112,6 +115,8 @@ public class DbKeyConfig {
     public static final String SEND_EMAIL_TO_INTERVIEWER = "send_email_to_interviewer";
     public static final String AVATAR_COLOR = "avatar_color";
     public static final String IS_NEW = "is_new";
+    public static final String OFFICE_NAME = "office_name";
+    public static final String INTERVIEW_PROCESS = "interview_process";
 
 
 }

@@ -6,5 +6,6 @@ public class RabbitMQConfig {
     public static final String DELETE = "delete";
     public static final String UPDATE_DETAIL = "update-detail";
     public static final String UPDATE_STATUS = "update-status";
+    public static final String UPDATE_RECRUITMENT = "update-recruitment";
     public static final String IS_OLD = "is-old";
 }

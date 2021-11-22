@@ -19,4 +19,6 @@ public class ThreadConfig {
     public static final String RECRUITMENT = "recruitment";
     public static final String LIST_USER = "listUser";
     public static final String LIST_SKILL = "listSkill";
+    public static final String LIST_STATUS_CV = "listStatusCV";
+    public static final String ADDRESS = "address";
 }
