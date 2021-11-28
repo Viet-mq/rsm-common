@@ -117,6 +117,9 @@ public class DbKeyConfig {
     public static final String IS_NEW = "is_new";
     public static final String OFFICE_NAME = "office_name";
     public static final String INTERVIEW_PROCESS = "interview_process";
+    public static final String COUNT = "count";
+    public static final String _ID = "_id";
+    public static final String JOIN_USERNAME = "interviewers.username";
 
 
 }

@@ -21,4 +21,5 @@ public class ThreadConfig {
     public static final String LIST_SKILL = "listSkill";
     public static final String LIST_STATUS_CV = "listStatusCV";
     public static final String ADDRESS = "address";
+    public static final String RECRUITMENT_NAME = "recruitmentName";
 }
