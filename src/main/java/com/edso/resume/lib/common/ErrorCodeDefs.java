@@ -71,6 +71,8 @@ public class ErrorCodeDefs {
     public static final int SEND_EMAIL_TO_INTERVIEWER = 256;
     public static final int OFFICE_NAME = 257;
     public static final int INTERVIEW_PROCESS = 258;
+    public static final int INTEREST = 259;
+
 
 
 }

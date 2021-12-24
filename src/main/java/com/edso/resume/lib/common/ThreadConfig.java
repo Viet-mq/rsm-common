@@ -6,7 +6,9 @@ public class ThreadConfig {
     public static final String SCHOOL = "school";
     public static final String SOURCE_CV = "sourceCV";
     public static final String PROFILE = "profile";
+    public static final String REJECT_PROFILE = "reject_profile";
     public static final String STATUS_CV = "statusCV";
+    public static final String OLD_STATUS_CV = "oldStatusCV";
     public static final String DEPARTMENT = "department";
     public static final String CALENDAR = "calendar";
     public static final String USER = "user";
@@ -22,4 +24,5 @@ public class ThreadConfig {
     public static final String LIST_STATUS_CV = "listStatusCV";
     public static final String ADDRESS = "address";
     public static final String RECRUITMENT_NAME = "recruitmentName";
+    public static final String REASON = "reason";
 }

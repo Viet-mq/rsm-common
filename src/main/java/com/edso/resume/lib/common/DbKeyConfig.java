@@ -120,6 +120,17 @@ public class DbKeyConfig {
     public static final String COUNT = "count";
     public static final String _ID = "_id";
     public static final String JOIN_USERNAME = "interviewers.username";
+    public static final String INTEREST = "interest";
+    public static final String CALENDAR = "calendar";
+    public static final String CREATE_RECRUITMENT_BY = "create_recruitment_by";
+    public static final String FULL_NAME_CREATOR = "full_name_creator";
+    public static final String FULL_NAME_SEARCH = "full_name_search";
+    public static final String RECRUITMENT_NAME_SEARCH = "recruitment_name_search";
+    public static final String DELETE = "delete";
+    public static final String FROM = "from";
+    public static final String TO = "to";
+    public static final String SALARY = "salary";
+    public static final String TOTAL = "total";
 
 
 }
