@@ -37,6 +37,7 @@ public class DbKeyConfig {
     public static final String UPDATE_BY = "update_by";
     public static final String NAME = "name";
     public static final String SSN = "ssn";
+    public static final String REASON_ID = "reason_id";
     public static final String REASON = "reason";
     public static final String UPDATE_BLACKLIST_AT = "update_blacklist_at";
     public static final String UPDATE_BLACKLIST_BY = "update_blacklist_by";
@@ -131,6 +132,8 @@ public class DbKeyConfig {
     public static final String TO = "to";
     public static final String SALARY = "salary";
     public static final String TOTAL = "total";
+    public static final String RECRUITMENT_STATUS_CV_ID = "interview_process.id";
+    public static final String RECRUITMENT_STATUS_CV_NAME = "interview_process.$.name";
 
 
 }

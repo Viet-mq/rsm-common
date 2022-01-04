@@ -132,7 +132,7 @@ public abstract class HttpSender {
         ResponseBody body = null;
         try {
             Response response = client.newCall(request).execute();
-            if (response.code()!=200){
+            if (response.code() != 200 && response.code() != 201) {
                 return "";
             }
             body = response.body();
