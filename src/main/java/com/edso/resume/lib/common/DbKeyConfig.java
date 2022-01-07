@@ -26,6 +26,7 @@ public class DbKeyConfig {
     public static final String NAME_SEARCH = "name_search";
     public static final String CREATE_AT = "create_at";
     public static final String UPDATE_AT = "update_at";
+    public static final String UPDATE_TALENT_POOL_AT = "update_talent_pool_at";
     public static final String LAST_APPLY = "last_apply";
     public static final String TAGS = "tags";
     public static final String GENDER = "gender";
@@ -79,8 +80,11 @@ public class DbKeyConfig {
     public static final String PARENT_NAME = "parent_name";
     public static final String URL_IMAGE = "url_image";
     public static final String PATH_IMAGE = "path_image";
+    public static final String TALENT_POOL = "talent_pool";
     public static final String TALENT_POOL_ID = "talent_pool_id";
     public static final String TALENT_POOL_NAME = "talent_pool_name";
+    public static final String TALENTPOOL_ID = "talent_pool.id";
+    public static final String TALENTPOOL_TIME = "talent_pool.$.time";
     public static final String COMPANY_NAME = "company_name";
     public static final String COMPANY_WEBSITE_URL = "company_website_url";
     public static final String COMPANY_CONTACT_NUMBER = "company_contact_number";
