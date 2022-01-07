@@ -83,6 +83,7 @@ public class DbKeyConfig {
     public static final String TALENT_POOL = "talent_pool";
     public static final String TALENT_POOL_ID = "talent_pool_id";
     public static final String TALENT_POOL_NAME = "talent_pool_name";
+    public static final String TALENT_POOL_TIME = "talent_pool_time";
     public static final String TALENTPOOL_ID = "talent_pool.id";
     public static final String TALENTPOOL_TIME = "talent_pool.$.time";
     public static final String COMPANY_NAME = "company_name";
