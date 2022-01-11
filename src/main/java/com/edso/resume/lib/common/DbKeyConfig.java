@@ -137,6 +137,8 @@ public class DbKeyConfig {
     public static final String TO = "to";
     public static final String SALARY = "salary";
     public static final String TOTAL = "total";
+    public static final String MANAGERS = "managers";
+    public static final String NUMBER_OF_PROFILE = "number_of_profile";
     public static final String RECRUITMENT_STATUS_CV_ID = "interview_process.id";
     public static final String RECRUITMENT_STATUS_CV_NAME = "interview_process.$.name";
 
