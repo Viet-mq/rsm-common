@@ -39,4 +39,5 @@ public class CollectionNameDefs {
     public static final String COLL_REASON_REJECT = "coll_reason_reject";
     public static final String COLL_REASON_REJECT_PROFILE = "coll_reason_reject_profile";
     public static final String COLL_ADDRESS = "coll_address";
+    public static final String COLL_HISTORY_EMAIL = "coll_history_email";
 }
