@@ -36,9 +36,11 @@ public class AppUtils {
             'o', 'O', 'o', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u', 'U', 'u',
             'U', 'u', 'U', 'u',};
 
+    public static final String KEYPOINT_PATTERN = "\\{(.+?)\\}";
+
     public static final SimpleDateFormat PART_FORMAT = new SimpleDateFormat("yyyyMMdd");
 
-    private static final Random rand = new Random();
+private static final Random rand = new Random();
 
     public static int randInt(int min, int max) {
         return rand.nextInt((max - min) + 1) + min;
