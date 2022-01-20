@@ -72,6 +72,7 @@ public class ErrorCodeDefs {
     public static final int OFFICE_NAME = 257;
     public static final int INTERVIEW_PROCESS = 258;
     public static final int INTEREST = 259;
+    public static final int SALARY_DESCRIPTION = 260;
 
 
 

@@ -25,6 +25,9 @@ public class ParseHeaderUtil {
                 if (key.equalsIgnoreCase(HeaderDefs.USER_PERMISSION)) {
                     //info.setRole(AppUtils.parseInt(value));
                 }
+                if (key.equalsIgnoreCase(HeaderDefs.USER_COMPANY)) {
+                    info.setCompany(AppUtils.parseString(value));
+                }
             }
         });
         // fix

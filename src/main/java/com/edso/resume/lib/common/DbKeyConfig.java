@@ -142,6 +142,8 @@ public class DbKeyConfig {
     public static final String RECRUITMENT_STATUS_CV_ID = "interview_process.id";
     public static final String RECRUITMENT_STATUS_CV_NAME = "interview_process.$.name";
     public static final String SUBJECT = "subject";
+    public static final String SALARY_DESCRIPTION = "salary_description";
+    public static final String FILE = "file";
 
 
 }

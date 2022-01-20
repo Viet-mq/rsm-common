@@ -11,6 +11,7 @@ public class HeaderInfo {
     private String fullName;
     private Integer role;
     private List<String> permission;
+    private String company;
 
     public boolean validate() {
         return !Strings.isNullOrEmpty(username) && role != null;

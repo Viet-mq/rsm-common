@@ -11,6 +11,12 @@ public class TypeConfig {
     public static final String CALENDAR_PRESENTER = "calendar_presenter";
     //Hội đồng tuyển dụng
     public static final String CALENDAR_INTERVIEWER = "calendar_interviewer";
+    //Ứng viên
+    public static final String CALENDARS_CANDIDATE = "calendars_candidate";
+    //Người giới thiệu
+    public static final String CALENDARS_PRESENTER = "calendars_presenter";
+    //Hội đồng tuyển dụng
+    public static final String CALENDARS_INTERVIEWER = "calendars_interviewer";
     //Người giới thiệu
     public static final String ROUND_PRESENTER = "round_presenter";
     //Ứng viên
