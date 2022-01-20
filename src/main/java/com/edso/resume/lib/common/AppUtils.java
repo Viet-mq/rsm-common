@@ -38,6 +38,8 @@ public class AppUtils {
 
     public static final String KEYPOINT_PATTERN = "\\{(.+?)\\}";
 
+    public static final String EMAIL_ENCODING = "UTF-8";
+
     public static final SimpleDateFormat PART_FORMAT = new SimpleDateFormat("yyyyMMdd");
 
 private static final Random rand = new Random();
