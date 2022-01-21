@@ -18,7 +18,7 @@ public abstract class HttpSender {
     private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    private static OkHttpClient client = new OkHttpClient.Builder().connectTimeout(120, TimeUnit.SECONDS)
+    private static final OkHttpClient client = new OkHttpClient.Builder().connectTimeout(120, TimeUnit.SECONDS)
             .readTimeout(300, TimeUnit.SECONDS).build();
 
     public abstract JsonObject postJson(String uri, Map<String, String> header, JsonObject params);

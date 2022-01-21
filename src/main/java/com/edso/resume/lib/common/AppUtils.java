@@ -2,11 +2,18 @@ package com.edso.resume.lib.common;
 
 import com.github.slugify.Slugify;
 import com.google.common.base.Strings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Objects;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -40,7 +47,9 @@ public class AppUtils {
 
     public static final SimpleDateFormat PART_FORMAT = new SimpleDateFormat("yyyyMMdd");
 
-private static final Random rand = new Random();
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    private static final Random rand = new Random();
 
     public static int randInt(int min, int max) {
         return rand.nextInt((max - min) + 1) + min;
@@ -239,7 +248,7 @@ private static final Random rand = new Random();
         return pattern.matcher(temp).replaceAll("").replaceAll(" +", " ").trim().toLowerCase().replaceAll("đ", "d");
     }
 
-    public static String mergeWhitespace(String str){
+    public static String mergeWhitespace(String str) {
         return str.trim().replaceAll(" +", " ");
     }
 
@@ -248,6 +257,22 @@ private static final Random rand = new Random();
             return 0;
         }
         return Math.round(d * 100) / 100.0d;
+    }
+
+    public static String saveFile(String serverPath, MultipartFile file) throws IOException {
+        String fileName = file.getOriginalFilename();
+        File file1 = new File(serverPath + fileName);
+        int i = 0;
+        while (file1.exists()) {
+            i++;
+            String[] arr = Objects.requireNonNull(file.getOriginalFilename()).split("\\.");
+            fileName = arr[0] + " (" + i + ")." + arr[1];
+            file1 = new File(serverPath + fileName);
+        }
+        FileOutputStream fos = new FileOutputStream(file1);
+        fos.write(file.getBytes());
+        fos.close();
+        return serverPath + fileName;
     }
 
 }

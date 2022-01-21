@@ -75,5 +75,4 @@ public class ErrorCodeDefs {
     public static final int SALARY_DESCRIPTION = 260;
 
 
-
 }

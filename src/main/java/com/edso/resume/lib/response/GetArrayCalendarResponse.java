@@ -8,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class GetArrayCalendarResponse<T> extends BaseResponse{
+public class GetArrayCalendarResponse<T> extends BaseResponse {
     private List<T> calendars;
 
     public GetArrayCalendarResponse() {
