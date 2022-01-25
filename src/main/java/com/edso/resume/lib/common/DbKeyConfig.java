@@ -144,6 +144,7 @@ public class DbKeyConfig {
     public static final String SUBJECT = "subject";
     public static final String SALARY_DESCRIPTION = "salary_description";
     public static final String FILE = "file";
+    public static final String MATCH = "match";
 
 
 }
