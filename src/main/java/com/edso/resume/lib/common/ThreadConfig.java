@@ -27,6 +27,9 @@ public class ThreadConfig {
     public static final String ADDRESS = "address";
     public static final String RECRUITMENT_NAME = "recruitmentName";
     public static final String REASON = "reason";
+    public static final String TAG = "tag";
+    public static final String LIST_TAG = "list_tag";
+    public static final String FOLLOWER = "follower";
     public static final String MERGE_PROFILE = "mergeProfile";
     public static final String MERGE_OTHER_PROFILE = "mergeOtherProfile";
     public static final String CHANGE_RECRUITMENT_PROFILE = "changRecruitmentProfile";

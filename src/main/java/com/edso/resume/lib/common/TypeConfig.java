@@ -26,5 +26,5 @@ public class TypeConfig {
     //Người giới thiệu
     public static final String REJECT_PRESENTER = "reject_presenter";
     //Ứng viên
-    public static final String EMAIL_CANDIDATE = "email_candidate";
+    public static final String EMAILS_CANDIDATE = "emails_candidate";
 }

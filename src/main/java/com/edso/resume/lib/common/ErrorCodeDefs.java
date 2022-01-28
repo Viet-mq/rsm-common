@@ -74,6 +74,7 @@ public class ErrorCodeDefs {
     public static final int INTERVIEW_PROCESS = 258;
     public static final int INTEREST = 259;
     public static final int SALARY_DESCRIPTION = 260;
+    public static final int COLOR = 261;
 
 
 }

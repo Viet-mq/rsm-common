@@ -145,6 +145,10 @@ public class DbKeyConfig {
     public static final String SALARY_DESCRIPTION = "salary_description";
     public static final String FILE = "file";
     public static final String MATCH = "match";
+    public static final String FOLLOWERS = "followers";
+    public static final String NEW = "new";
+    public static final String COLOR = "color";
+    public static final String NAME_EQUAL = "name_equal";
 
 
 }
