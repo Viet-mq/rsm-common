@@ -41,4 +41,5 @@ public class CollectionNameDefs {
     public static final String COLL_ADDRESS = "coll_address";
     public static final String COLL_HISTORY_EMAIL = "coll_history_email";
     public static final String COLL_TAG = "coll_tag";
+    public static final String COLL_REMINDER = "coll_reminder";
 }

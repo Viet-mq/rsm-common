@@ -148,7 +148,9 @@ public class DbKeyConfig {
     public static final String FOLLOWERS = "followers";
     public static final String NEW = "new";
     public static final String COLOR = "color";
+    public static final String PIC = "pic";
     public static final String NAME_EQUAL = "name_equal";
+    public static final String REPEAT = "repeat";
 
 
 }

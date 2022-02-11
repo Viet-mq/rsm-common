@@ -242,12 +242,18 @@ public class AppUtils {
     }
 
     public static String parseVietnameseToEnglish(String str) {
+        if(Strings.isNullOrEmpty(str)){
+            return "";
+        }
         String temp = Normalizer.normalize(str, Normalizer.Form.NFD);
         Pattern pattern = Pattern.compile("\\p{InCombiningDiacriticalMarks}+");
         return pattern.matcher(temp).replaceAll("").replaceAll(" +", " ").trim().toLowerCase().replaceAll("đ", "d");
     }
 
     public static String mergeWhitespace(String str) {
+        if(Strings.isNullOrEmpty(str)){
+            return "";
+        }
         return str.trim().replaceAll(" +", " ");
     }
 
