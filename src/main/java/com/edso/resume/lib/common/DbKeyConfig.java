@@ -126,6 +126,8 @@ public class DbKeyConfig {
     public static final String COUNT = "count";
     public static final String _ID = "_id";
     public static final String JOIN_USERNAME = "interviewers.username";
+    public static final String INTERVIEWERS_FULL_NAME = "interviewers.$.full_name";
+    public static final String INTERVIEWERS_EMAIL = "interviewers.$.email";
     public static final String INTEREST = "interest";
     public static final String CALENDAR = "calendar";
     public static final String CREATE_RECRUITMENT_BY = "create_recruitment_by";
@@ -148,9 +150,18 @@ public class DbKeyConfig {
     public static final String FOLLOWERS = "followers";
     public static final String NEW = "new";
     public static final String COLOR = "color";
-    public static final String PIC = "pic";
+    public static final String PIC_ID = "pic_id";
+    public static final String PIC_NAME = "pic_name";
+    public static final String PIC_MAIL = "pic_mail";
     public static final String NAME_EQUAL = "name_equal";
     public static final String REPEAT = "repeat";
-
+    public static final String LINKEDIN = "linkedin";
+    public static final String FACEBOOK = "facebook";
+    public static final String SKYPE = "skype";
+    public static final String GITHUB = "github";
+    public static final String OTHER_TECH = "other_tech";
+    public static final String WEB = "web";
+    public static final String START = "start";
+    public static final String END = "end";
 
 }

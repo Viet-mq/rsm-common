@@ -1,17 +1,20 @@
 package com.edso.resume.lib.common;
 
+import com.documents4j.api.DocumentType;
+import com.documents4j.api.IConverter;
+import com.documents4j.job.LocalConverter;
 import com.github.slugify.Slugify;
 import com.google.common.base.Strings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -242,7 +245,7 @@ public class AppUtils {
     }
 
     public static String parseVietnameseToEnglish(String str) {
-        if(Strings.isNullOrEmpty(str)){
+        if (Strings.isNullOrEmpty(str)) {
             return "";
         }
         String temp = Normalizer.normalize(str, Normalizer.Form.NFD);
@@ -251,7 +254,7 @@ public class AppUtils {
     }
 
     public static String mergeWhitespace(String str) {
-        if(Strings.isNullOrEmpty(str)){
+        if (Strings.isNullOrEmpty(str)) {
             return "";
         }
         return str.trim().replaceAll(" +", " ");
@@ -264,20 +267,53 @@ public class AppUtils {
         return Math.round(d * 100) / 100.0d;
     }
 
-    public static String saveFile(String serverPath, MultipartFile file) throws IOException {
+    public static File saveFile(MultipartFile file, String serverPath) throws IOException {
         String fileName = file.getOriginalFilename();
         File file1 = new File(serverPath + fileName);
         int i = 0;
+        String[] arr = fileName.split("\\.");
         while (file1.exists()) {
             i++;
-            String[] arr = Objects.requireNonNull(file.getOriginalFilename()).split("\\.");
-            fileName = arr[0] + " (" + i + ")." + arr[1];
-            file1 = new File(serverPath + fileName);
+            file1 = new File(serverPath + arr[0] + " (" + i + ")." + arr[1]);
         }
         FileOutputStream fos = new FileOutputStream(file1);
         fos.write(file.getBytes());
         fos.close();
-        return serverPath + fileName;
+        return file1;
     }
 
+    public static String saveFile(String serverPath, MultipartFile file) throws IOException {
+        String fileName = file.getOriginalFilename();
+        File file1 = new File(serverPath + fileName);
+        int i = 0;
+        String[] arr = fileName.split("\\.");
+        while (file1.exists()) {
+            i++;
+            file1 = new File(serverPath + arr[0] + " (" + i + ")." + arr[1]);
+        }
+        FileOutputStream fos = new FileOutputStream(file1);
+        fos.write(file.getBytes());
+        fos.close();
+        return file1.getPath();
+    }
+
+    public static File convertDocToPdf(File file, String path) throws IOException {
+        String fileName = file.getName();
+        String[] arr = fileName.split("\\.");
+        File file2 = new File(path + arr[0] + ".pdf");
+        int i = 0;
+        while (file2.exists()) {
+            i++;
+            file2 = new File(path + arr[0] + " (" + i + ").pdf");
+        }
+        InputStream docxInputStream = new FileInputStream(file);
+        OutputStream outputStream = new FileOutputStream(file2);
+        IConverter converter = LocalConverter.builder().build();
+        converter.convert(docxInputStream).as(DocumentType.DOCX).to(outputStream).as(DocumentType.PDF).execute();
+        docxInputStream.close();
+        outputStream.close();
+        converter.shutDown();
+        file.delete();
+        return file2;
+    }
 }

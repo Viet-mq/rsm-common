@@ -34,4 +34,5 @@ public class ThreadConfig {
     public static final String MERGE_OTHER_PROFILE = "mergeOtherProfile";
     public static final String CHANGE_RECRUITMENT_PROFILE = "changRecruitmentProfile";
     public static final String PIC = "pic";
+    public static final String COMPANY = "company";
 }
