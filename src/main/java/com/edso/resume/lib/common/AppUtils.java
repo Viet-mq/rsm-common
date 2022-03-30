@@ -12,6 +12,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.*;
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Random;
@@ -267,6 +268,16 @@ public class AppUtils {
         return Math.round(d * 100) / 100.0d;
     }
 
+    public static long getTimeBeginningDay() {
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date date = f.parse(LocalDate.now().toString());
+            return date.getTime();
+        } catch (Throwable ex) {
+            return 0L;
+        }
+    }
+
     public static File saveFile(MultipartFile file, String serverPath) throws IOException {
         String fileName = file.getOriginalFilename();
         File file1 = new File(serverPath + fileName);
@@ -295,6 +306,20 @@ public class AppUtils {
         fos.write(file.getBytes());
         fos.close();
         return file1.getPath();
+    }
+
+    public static String removeWhitespaceAndLowerCase(String str) {
+        if (Strings.isNullOrEmpty(str)) {
+            return "";
+        }
+        return str.replaceAll(" ", "").toLowerCase();
+    }
+
+    public static String removeWhitespace(String str) {
+        if (Strings.isNullOrEmpty(str)) {
+            return "";
+        }
+        return str.replaceAll(" ", "");
     }
 
     public static File convertDocToPdf(File file, String path) throws IOException {

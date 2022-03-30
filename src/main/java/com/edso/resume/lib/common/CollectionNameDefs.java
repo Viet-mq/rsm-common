@@ -42,4 +42,10 @@ public class CollectionNameDefs {
     public static final String COLL_HISTORY_EMAIL = "coll_history_email";
     public static final String COLL_TAG = "coll_tag";
     public static final String COLL_REMINDER = "coll_reminder";
+    public static final String COLL_ACTION = "coll_action";
+    public static final String COLL_ROLE = "coll_role";
+    public static final String COLL_VIEW_ROLE = "coll_view_role";
+    public static final String COLL_API = "coll_api";
+    public static final String COLL_ORGANIZATION = "coll_organization";
+
 }

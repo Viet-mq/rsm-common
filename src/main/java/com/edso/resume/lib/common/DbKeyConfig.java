@@ -163,5 +163,36 @@ public class DbKeyConfig {
     public static final String WEB = "web";
     public static final String START = "start";
     public static final String END = "end";
+    public static final String MAIL_REF2 = "mail_ref2";
+    public static final String KEY = "key";
+    public static final String ICON = "icon";
+    public static final String PATH = "path";
+    public static final String ACTIONS = "actions";
+    public static final String ACTIONS_ID = "actions.id";
+    public static final String ACTIONS_TITLE = "actions.$.title";
+    public static final String ACTIONS_KEY = "actions.$.key";
+    public static final String ACTIONS_ICON = "actions.$.icon";
+    public static final String ACTIONS_PATH = "actions.$.path";
+    public static final String PERMISSIONS = "permissions";
+    public static final String PERMISSIONS_ID = "permissions.id";
+    public static final String PERMISSION_ID = "permission_id";
+    public static final String PERMISSIONS_TITLE = "permissions.$.title";
+    public static final String PERMISSIONS_KEY = "permissions.$.key";
+    public static final String PERMISSIONS_ICON = "permissions.$.icon";
+    public static final String PERMISSIONS_PATH = "permissions.$.path";
+    public static final String PERMISSIONS_INDEX = "permissions.$.index";
+    public static final String METHOD = "method";
+    public static final String ROLE_ID = "role_id";
+    public static final String VIEW_ROLE_ID = "view_role_id";
+    public static final String PASSWORD = "password";
+    public static final String LAST_CHANGE_PASSWORD_AT = "last_change_password_at";
+    public static final String API_ID = "api_id";
+    public static final String API_ROLE_ID = "api_role_id";
+    public static final String APIS = "apis";
+    public static final String VIEW_ROLES = "view_roles";
+    public static final String API_ROLES = "api_roles";
+    public static final String ROLES = "roles";
+    public static final String INDEX = "index";
+    public static final String ORGANIZATIONS = "organizations";
 
 }

@@ -75,6 +75,20 @@ public class ErrorCodeDefs {
     public static final int INTEREST = 259;
     public static final int SALARY_DESCRIPTION = 260;
     public static final int COLOR = 261;
+    public static final int MAIL_REF2 = 262;
+    public static final int KEY = 263;
+    public static final int ICON = 264;
+    public static final int PATH = 265;
+    public static final int METHOD = 266;
+    public static final int PERMISSIONS = 267;
+    public static final int APIS = 268;
+    public static final int VIEW_ROLES = 269;
+    public static final int API_ROLES = 270;
+    public static final int PASSWORD = 271;
+    public static final int WALLET_ADDRESS = 272;
+    public static final int ROLES = 273;
+    public static final int INDEX = 274;
+    public static final int ORGANIZATIONS = 275;
 
 
 }
