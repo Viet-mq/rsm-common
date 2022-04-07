@@ -194,5 +194,7 @@ public class DbKeyConfig {
     public static final String ROLES = "roles";
     public static final String INDEX = "index";
     public static final String ORGANIZATIONS = "organizations";
+    public static final String ORGANIZATION_ID = "organization_id";
+    public static final String ORGANIZATION_NAME = "organization_name";
 
 }

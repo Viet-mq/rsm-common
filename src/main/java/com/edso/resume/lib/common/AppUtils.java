@@ -13,9 +13,7 @@ import java.io.*;
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Random;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -166,6 +164,15 @@ public class AppUtils {
         } catch (Exception e) {
         }
         return 0;
+    }
+
+    public static List<String> parseList(Object o) {
+        if(o == null){
+            return new ArrayList<>();
+        }
+        String str = (String) o;
+        return Arrays.asList(str.split(";"));
+
     }
 
     public static double parseDouble(Object o) {

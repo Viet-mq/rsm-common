@@ -89,6 +89,11 @@ public class ErrorCodeDefs {
     public static final int ROLES = 273;
     public static final int INDEX = 274;
     public static final int ORGANIZATIONS = 275;
+    public static final int SUBJECT = 276;
+
+
+
+    public static final int NOT_HAVE_ACCESS = 1000;
 
 
 }

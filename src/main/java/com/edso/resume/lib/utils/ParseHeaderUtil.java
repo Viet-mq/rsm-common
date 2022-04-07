@@ -6,6 +6,7 @@ import com.edso.resume.lib.entities.HeaderInfo;
 import com.google.common.base.Strings;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class ParseHeaderUtil {
@@ -16,17 +17,14 @@ public class ParseHeaderUtil {
                 if (key.equalsIgnoreCase(HeaderDefs.USER_NAME_IN_HEADER)) {
                     info.setUsername(value);
                 }
-                if (key.equalsIgnoreCase(HeaderDefs.USER_FULL_NAME)) {
-                    info.setFullName(value);
-                }
                 if (key.equalsIgnoreCase(HeaderDefs.USER_ROLE)) {
                     info.setRole(AppUtils.parseInt(value));
                 }
                 if (key.equalsIgnoreCase(HeaderDefs.USER_PERMISSION)) {
                     //info.setRole(AppUtils.parseInt(value));
                 }
-                if (key.equalsIgnoreCase(HeaderDefs.USER_COMPANY)) {
-                    info.setCompany(AppUtils.parseString(value));
+                if (key.equalsIgnoreCase(HeaderDefs.USER_ORGANIZATION)) {
+                    info.setOrganizations(AppUtils.parseList(value));
                 }
             }
         });

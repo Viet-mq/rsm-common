@@ -8,10 +8,9 @@ import java.util.List;
 @Data
 public class HeaderInfo {
     private String username;
-    private String fullName;
     private Integer role;
     private List<String> permission;
-    private String company;
+    private List<String> organizations;
 
     public boolean validate() {
         return !Strings.isNullOrEmpty(username) && role != null;
