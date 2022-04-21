@@ -6,7 +6,6 @@ import com.edso.resume.lib.entities.HeaderInfo;
 import com.google.common.base.Strings;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 public class ParseHeaderUtil {
@@ -25,6 +24,9 @@ public class ParseHeaderUtil {
                 }
                 if (key.equalsIgnoreCase(HeaderDefs.USER_ORGANIZATION)) {
                     info.setOrganizations(AppUtils.parseList(value));
+                }
+                if (key.equalsIgnoreCase(HeaderDefs.USER_MY_ORGANIZATION)) {
+                    info.setMyOrganizations(AppUtils.parseList(value));
                 }
             }
         });

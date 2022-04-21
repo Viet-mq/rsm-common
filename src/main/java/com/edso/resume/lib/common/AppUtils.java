@@ -1,15 +1,10 @@
 package com.edso.resume.lib.common;
 
-import com.documents4j.api.DocumentType;
-import com.documents4j.api.IConverter;
-import com.documents4j.job.LocalConverter;
 import com.github.slugify.Slugify;
 import com.google.common.base.Strings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.io.*;
 import java.text.Normalizer;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -166,8 +161,15 @@ public class AppUtils {
         return 0;
     }
 
+    public static boolean parseBoolean(Object o) {
+        if (Strings.isNullOrEmpty(AppUtils.parseString(o))) {
+            return false;
+        }
+        return (Boolean) o;
+    }
+
     public static List<String> parseList(Object o) {
-        if(o == null){
+        if (o == null) {
             return new ArrayList<>();
         }
         String str = (String) o;
@@ -212,8 +214,8 @@ public class AppUtils {
     }
 
     private static final String FULLNAME_PATTERN =
-            "^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶ" +
-                    "ẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợ" +
+            "^[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêếìíòóôõùúăđĩũơƯẠẢẤẦẨẪẬẮẰẲẴẶ" +
+                    "ẸẺẼỀỂưạảấầẩẫậắằẳẵặẹẻẽềểỄỆẾỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợ" +
                     "ụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\\s]+$";
 
     public static boolean validateFullName(String fullName) {
@@ -285,36 +287,6 @@ public class AppUtils {
         }
     }
 
-    public static File saveFile(MultipartFile file, String serverPath) throws IOException {
-        String fileName = file.getOriginalFilename();
-        File file1 = new File(serverPath + fileName);
-        int i = 0;
-        String[] arr = fileName.split("\\.");
-        while (file1.exists()) {
-            i++;
-            file1 = new File(serverPath + arr[0] + " (" + i + ")." + arr[1]);
-        }
-        FileOutputStream fos = new FileOutputStream(file1);
-        fos.write(file.getBytes());
-        fos.close();
-        return file1;
-    }
-
-    public static String saveFile(String serverPath, MultipartFile file) throws IOException {
-        String fileName = file.getOriginalFilename();
-        File file1 = new File(serverPath + fileName);
-        int i = 0;
-        String[] arr = fileName.split("\\.");
-        while (file1.exists()) {
-            i++;
-            file1 = new File(serverPath + arr[0] + " (" + i + ")." + arr[1]);
-        }
-        FileOutputStream fos = new FileOutputStream(file1);
-        fos.write(file.getBytes());
-        fos.close();
-        return file1.getPath();
-    }
-
     public static String removeWhitespaceAndLowerCase(String str) {
         if (Strings.isNullOrEmpty(str)) {
             return "";
@@ -329,23 +301,4 @@ public class AppUtils {
         return str.replaceAll(" ", "");
     }
 
-    public static File convertDocToPdf(File file, String path) throws IOException {
-        String fileName = file.getName();
-        String[] arr = fileName.split("\\.");
-        File file2 = new File(path + arr[0] + ".pdf");
-        int i = 0;
-        while (file2.exists()) {
-            i++;
-            file2 = new File(path + arr[0] + " (" + i + ").pdf");
-        }
-        InputStream docxInputStream = new FileInputStream(file);
-        OutputStream outputStream = new FileOutputStream(file2);
-        IConverter converter = LocalConverter.builder().build();
-        converter.convert(docxInputStream).as(DocumentType.DOCX).to(outputStream).as(DocumentType.PDF).execute();
-        docxInputStream.close();
-        outputStream.close();
-        converter.shutDown();
-        file.delete();
-        return file2;
-    }
 }

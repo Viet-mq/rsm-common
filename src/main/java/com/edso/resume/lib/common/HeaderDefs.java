@@ -6,5 +6,6 @@ public class HeaderDefs {
     public static final String USER_ROLE = "X-USER-ROLE";
     public static final String USER_PERMISSION = "X-USER-PERMISSION";
     public static final String USER_ORGANIZATION = "X-USER-ORGANIZATION";
+    public static final String USER_MY_ORGANIZATION = "X-USER-MY-ORGANIZATION";
 
 }

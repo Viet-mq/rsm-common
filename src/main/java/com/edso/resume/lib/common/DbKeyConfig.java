@@ -196,5 +196,6 @@ public class DbKeyConfig {
     public static final String ORGANIZATIONS = "organizations";
     public static final String ORGANIZATION_ID = "organization_id";
     public static final String ORGANIZATION_NAME = "organization_name";
+    public static final String BLACK_LIST = "black_list";
 
 }

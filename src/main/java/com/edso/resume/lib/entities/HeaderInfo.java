@@ -10,6 +10,7 @@ public class HeaderInfo {
     private String username;
     private Integer role;
     private List<String> permission;
+    private List<String> myOrganizations;
     private List<String> organizations;
 
     public boolean validate() {
